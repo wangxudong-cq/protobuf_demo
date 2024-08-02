@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lab/my_workspace/graph_loader_debug/graph_proto/3rd/miniz.c
+miniz.h
+/home/lab/my_workspace/graph_loader_debug/graph_proto/3rd/miniz.h
+sys/stat.h
+-
+windows.h
+-
+sys/utime.h
+-
+sys/utime.h
+-
+sys/utime.h
+-
+utime.h
+-
+utime.h
+-
+utime.h
+-
+
+/home/lab/my_workspace/graph_loader_debug/graph_proto/3rd/miniz.h
+stddef.h
+-
+time.h
+-
+assert.h
+-
+stdint.h
+-
+stdlib.h
+-
+string.h
+-
+stdio.h
+-
+

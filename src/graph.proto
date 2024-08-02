@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+package graph;
+
+//enum TypeEnum {
+//        DATA_NUL = 0;
+//        DATA_SCH = 1;
+//        DATA_SUB = 2;
+//        DATA_SRC = 3;
+//        DATA_KER = 4;
+//        DATA_PRA = 5;
+//        DATA_QUE = 7;
+//    };
+
+//each graph exported will include the following information
+//message binProto {
+//    optional string bin_name = 1;
+//    optional TypeEnum  bin_dtype = 2;
+//    optional uint64  bin_haddr = 3;
+//    optional uint64  bin_daddr = 4;
+//    optional uint32  bin_dsize = 5;
+//    optional bytes  bin_dbuff = 6;
+//    optional uint32  bin_qid = 7;
+//    optional uint32  bin_qbase = 8;
+//    optional uint32  bin_qszie = 9;
+//}
+
+//message GraphProto {
+//    optional string graph_name = 1;
+//    repeated binProto graph_bin = 2;
+//}
+
+
+message GraphProto {
+    optional string graph_name = 1;
+    optional bytes  graph_data = 2;
+    optional uint32  graph_size = 3;
+    optional bytes  graph_in_data = 4;
+    optional uint32  graph_in_size = 5;
+    optional bytes  graph_out_data = 6;
+    optional uint32  graph_out_size = 7;
+}
+
+message GraphsProto {
+    repeated GraphProto graph_node = 2;
+}
